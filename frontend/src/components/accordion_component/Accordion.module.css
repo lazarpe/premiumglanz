@@ -1,0 +1,12 @@
+.accordionTitle {
+    padding-bottom: -10px;
+}
+
+.link {
+    color: lightgrey;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 5;
+    top: -15px;
+}
