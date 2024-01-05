@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}

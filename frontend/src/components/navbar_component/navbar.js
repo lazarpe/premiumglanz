@@ -7,7 +7,6 @@ import {
     NavbarContent,
     NavbarItem,
     Link,
-    Button,
     NavbarMenuToggle,
     NavbarMenu, NavbarMenuItem
 } from "@nextui-org/react";
@@ -18,13 +17,6 @@ import DropdownComponent from "@/components/dropdown_component/dropdown";
 
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-    const menuItems = [
-        "Dienste und Preise",
-        "Über uns",
-        "Kontakt",
-        "Termin buchen",
-    ];
 
     return (
         <Navbar
@@ -40,7 +32,7 @@ export default function NavbarComponent() {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="start">
+            <NavbarContent className="hidden sm:flex gap-4" justify="start" style={{left: -100}}>
                 <NavbarBrand>
                     <Logo/>
                     <p className="font-bold text-inherit">PREMIUMGLANZ</p>
@@ -51,7 +43,7 @@ export default function NavbarComponent() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color={"foreground"} href="#">
+                    <Link color={"foreground"} href="#" style={{marginLeft: -15}}>
                         Über uns
                     </Link>
                 </NavbarItem>
@@ -61,7 +53,7 @@ export default function NavbarComponent() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="primary" href="#">
+                    <Link color="primary" href="#" style={{fontWeight: "bold"}}>
                         Termin buchen
                     </Link>
                 </NavbarItem>
@@ -73,16 +65,9 @@ export default function NavbarComponent() {
 
             <NavbarMenu>
                 <NavbarMenuItem>
-                    <Link
-                        className="w-full"
-                        color={"foreground"}
-                        href="#"
-                        size="lg"
-                    >
-                        <AccordionComponent/>
-                    </Link>
+                    <AccordionComponent/>
                 </NavbarMenuItem>
-                <NavbarMenuItem>
+                <NavbarMenuItem style={{marginTop: -5}}>
                     <Link
                         className={styles.link}
                         color={"foreground"}
@@ -108,6 +93,7 @@ export default function NavbarComponent() {
                         color={"primary"}
                         href="#"
                         size="lg"
+
                     >
                         Termin buchen
                     </Link>

@@ -15,7 +15,7 @@ export default function HeroSection() {
                 <div className={style.title}>
                     <b style={{fontSize: 60}}>
                         <h1>PREMIUM</h1>
-                        <h1 style={{marginTop: -25}}>GLANZ</h1>
+                        <h1 style={{marginTop: -15}}>GLANZ</h1>
                     </b>
                     <div style={{fontSize: 25, fontWeight: "lighter", marginRight: 20, maxWidth: 500}}>
                         <p>Präzise Pflege und leidenschaftliche Expertise – für den Glanz, den Ihr Auto verdient.</p>
