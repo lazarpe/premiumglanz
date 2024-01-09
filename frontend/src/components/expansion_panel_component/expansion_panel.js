@@ -10,7 +10,7 @@ import innenraumPremium from "../../assets/img/innenraum_premium.jpg";
 
 export default function ExpansionPanelComponent() {
     return (
-        <Accordion variant="splitted">
+        <Accordion variant="splitted" style={{marginBottom: 30}}>
             <AccordionItem key="1" aria-label="Exterieur" title="Exterieur">
                 <CardComponent imagePath={politur} title={"Politur und Lackversiegelung"} price={"199"}/>
                 <CardComponent imagePath={nano} title={"Nanoversiegelung Fenster und Scheiben"} price={"119"}/>
