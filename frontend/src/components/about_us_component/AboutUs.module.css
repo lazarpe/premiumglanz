@@ -3,3 +3,19 @@
     max-width: 500px;
     margin-top: 10px;
 }
+
+.logo {
+    max-width: 500px;
+    right: 50%;
+    position: absolute;
+}
+
+.gridContainer {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.day {
+    margin-top: 10px;
+}

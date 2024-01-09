@@ -26,14 +26,14 @@ export default function NavbarComponent() {
 
             <NavbarContent className="sm:hidden pr-3" justify="start">
                 <NavbarBrand>
-                    <Logo/>
+                    <Logo width={36} height={36}/>
                     <p className="font-bold text-inherit">PREMIUMGLANZ</p>
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="start" style={{left: -100}}>
                 <NavbarBrand>
-                    <Logo/>
+                    <Logo width={36} height={36}/>
                     <p className="font-bold text-inherit">PREMIUMGLANZ</p>
                 </NavbarBrand>
                 <NavbarItem>
