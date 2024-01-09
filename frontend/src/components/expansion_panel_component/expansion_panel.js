@@ -1,14 +1,25 @@
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import CardComponent from "@/components/card_component/card";
+import politur from "../../assets/img/politur.png";
+import nano from "../../assets/img/nanoversiegelung_und_fensterscheiben.jpg";
+import cabrio from "../../assets/img/cabrio.jpg";
+import felgen from "../../assets/img/felgen.jpg";
+import innenraumExpress from "../../assets/img/innenraum_express.jpg";
+import innenraumPremium from "../../assets/img/innenraum_premium.jpg";
 
 export default function ExpansionPanelComponent() {
     return (
         <Accordion variant="splitted">
-            <AccordionItem key="1" aria-label="Ac" title="Exterieur">
-                Hier kommen die cards
+            <AccordionItem key="1" aria-label="Exterieur" title="Exterieur">
+                <CardComponent imagePath={politur} title={"Politur und Lackversiegelung"} price={"199"}/>
+                <CardComponent imagePath={nano} title={"Nanoversiegelung Fenster und Scheiben"} price={"119"}/>
+                <CardComponent imagePath={cabrio} title={"Imprägnierung und Reinigung Cabrio-dach"} price={"129"}/>
+                <CardComponent imagePath={felgen} title={"Felgenreinigung"} price={"39"}/>
             </AccordionItem>
-            <AccordionItem key="2" aria-label="Accordion 3" title="Interieur" style={{marginTop: 5}}>
-                Hoi test test
+            <AccordionItem key="2" aria-label="Interieur" title="Interieur">
+                <CardComponent imagePath={innenraumExpress} title={"Innenreinigung Express"} price={"59"}/>
+                <CardComponent imagePath={innenraumPremium} title={"Innenreinigung Premium"} price={"99"}/>
             </AccordionItem>
         </Accordion>
     );

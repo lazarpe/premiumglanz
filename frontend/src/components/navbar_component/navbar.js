@@ -20,7 +20,6 @@ export default function NavbarComponent() {
 
     return (
         <Navbar
-            isBordered
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
         >
@@ -93,7 +92,6 @@ export default function NavbarComponent() {
                         color={"primary"}
                         href="#"
                         size="lg"
-
                     >
                         Termin buchen
                     </Link>

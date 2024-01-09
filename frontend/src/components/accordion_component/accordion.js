@@ -7,7 +7,7 @@ import styles from "./Accordion.module.css"
 export default function AccordionComponent() {
     return (
         <Accordion>
-            <AccordionItem className={styles.accordionTitle} key="1" aria-label="Accordion 1"
+            <AccordionItem className={styles.accordionTitle} key="1" aria-label="DiensteUndPreise"
                            title="Dienste und Preise">
                 <Link
                     className={styles.link}
