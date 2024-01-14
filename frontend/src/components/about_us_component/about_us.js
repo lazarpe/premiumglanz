@@ -41,6 +41,10 @@ export default function AboutUsComponent() {
                     <p className={style.day}>Sonntag</p>
                     <p>Geschlossen</p>
                 </div>
+                <div>
+                    <br/>
+                    <h3>Unser Standort</h3>
+                </div>
             </div>
         </div>
     );
