@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./AboutUs.module.css";
+import {Map} from "@/components/map_component/map";
 
 export default function AboutUsComponent() {
     return (
@@ -44,6 +45,7 @@ export default function AboutUsComponent() {
                 <div>
                     <br/>
                     <h3>Unser Standort</h3>
+                    <Map />
                 </div>
             </div>
         </div>

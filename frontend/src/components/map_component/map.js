@@ -1,30 +1,41 @@
-import { useEffect, useRef, useMemo } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
-function Map({ address }) {
-    const mapRef = useRef(null);
-    const geocoder = useMemo(() => new google.maps.Geocoder(), []);
+"use client"
+
+import React, {useEffect} from "react";
+import {Loader} from '@googlemaps/js-api-loader';
+
+export function Map() {
+
+    const mapRef = React.useRef<HTMLDivElement>(null);
+
     useEffect(() => {
-        const loader = new Loader({
-            apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-            version: "weekly",
-        });
-        loader.load().then(() => {
-            geocoder.geocode({ address: address }, (results, status) => {
-                if (status === "OK") {
-                    const map = new google.maps.Map(mapRef.current, {
-                        center: results[0].geometry.location,
-                        zoom: 8,
-                    });
-                    const marker = new google.maps.Marker({
-                        map: map,
-                        position: results[0].geometry.location,
-                    });
-                } else {
-                    console.error(`Geocode was not successful for the following reason: ${status}`);
-                }
+
+        const initMap = async () => {
+
+            const loader = new Loader({
+                apiKey: 'AIzaSyBdE2ftlpj9otbGfgPjKnq20r2lojXyj8Q',
+                version: 'weekly'
             });
-        });
-    }, [address, geocoder]);
-    return <div style={{ height: "400px" }} ref={mapRef} />;
+
+            const { Map } = await loader.importLibrary('maps');
+
+            const position = {
+                lat: 43.642693,
+                lng: -79.3871189
+            }
+
+            const mapOptions = {
+                center: position,
+                zoom: 17,
+                mapId: 'MY_NEXTJS_MAPID'
+            }
+
+            const map = new Map(mapRef.current, mapOptions);
+        }
+
+        initMap();
+    }, []);
+
+    return (
+        <div ref={mapRef} />
+    );
 }
-export default Map;
