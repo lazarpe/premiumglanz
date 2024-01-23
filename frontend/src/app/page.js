@@ -8,6 +8,7 @@ import HeroSection from "@/components/hero_section_component/hero_section";
 import ServicesAndPricesComponent from "@/components/services_and_prices_component/services_and_prices";
 import style from "./Page.module.css";
 import AboutUsComponent from "@/components/about_us_component/about_us";
+import FormComponent from "@/components/form_component/form";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <div className={style.content}>
                 <ServicesAndPricesComponent/>
                 <AboutUsComponent />
+                <FormComponent />
             </div>
         </NextUIProvider>
     )
