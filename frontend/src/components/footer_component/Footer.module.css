@@ -1,0 +1,33 @@
+.left {
+    left: -100%;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(26, 26, 26);
+    bottom: 0;
+    position: relative;
+}
+
+.right {
+    right: -100%;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(26, 26, 26);
+    bottom: 0;
+    position: relative;
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    background-color: rgb(26, 26, 26);
+    grid-template-columns: auto auto auto;
+}
+
+.p {
+    padding-top: 60px;
+    font-weight: lighter;
+    left: 50px;
+    position: relative;
+}
