@@ -14,6 +14,7 @@ import {Logo} from "@/assets/logo";
 import AccordionComponent from "@/components/accordion_component/accordion";
 import styles from "./Navbar.module.css";
 import DropdownComponent from "@/components/dropdown_component/dropdown";
+import {info} from "autoprefixer";
 
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -24,18 +25,21 @@ export default function NavbarComponent() {
             onMenuOpenChange={setIsMenuOpen}
         >
 
-            <NavbarContent className="sm:hidden pr-3" justify="start">
-                <NavbarBrand>
-                    <Logo width={36} height={36}/>
-                    <p className="font-bold text-inherit">PREMIUMGLANZ</p>
-                </NavbarBrand>
-            </NavbarContent>
-
+            <Link href={"/"} color={"foreground"}>
+                <NavbarContent className="sm:hidden pr-3" justify="start">
+                    <NavbarBrand>
+                        <Logo width={36} height={36}/>
+                        <p className="font-bold text-inherit">PREMIUMGLANZ</p>
+                    </NavbarBrand>
+                </NavbarContent>
+            </Link>
             <NavbarContent className="hidden sm:flex gap-4" justify="start" style={{left: -100}}>
-                <NavbarBrand>
-                    <Logo width={36} height={36}/>
-                    <p className="font-bold text-inherit">PREMIUMGLANZ</p>
-                </NavbarBrand>
+                <Link href={"/"} color={"foreground"}>
+                    <NavbarBrand>
+                        <Logo width={36} height={36}/>
+                        <p className="font-bold text-inherit">PREMIUMGLANZ</p>
+                    </NavbarBrand>
+                </Link>
                 <NavbarItem>
                     <Link color="foreground" href="#">
                         <DropdownComponent/>

@@ -5,3 +5,9 @@
     position: absolute;
     margin-top: 50px;
 }
+
+.p {
+    font-weight: lighter;
+    max-width: 500px;
+    margin-top: 10px;
+}

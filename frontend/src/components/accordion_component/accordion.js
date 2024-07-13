@@ -12,7 +12,7 @@ export default function AccordionComponent() {
                 <Link
                     className={styles.link}
                     color={"foreground"}
-                    href="#"
+                    href="/politur"
                     size="lg"
                 >
                     Politur und Lackversiegelung

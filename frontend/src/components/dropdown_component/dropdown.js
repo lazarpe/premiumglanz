@@ -1,5 +1,5 @@
 import React from "react";
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+import {Link, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export default function DropdownComponent() {
@@ -16,7 +16,11 @@ export default function DropdownComponent() {
                 </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
-                <DropdownItem>Politur und Lackversiegelung</DropdownItem>
+                <DropdownItem>
+                    <Link href={"/politur"} color={"foreground"}>
+                        Politur und Lackversiegelung
+                    </Link>
+                </DropdownItem>
                 <DropdownItem>Nanoversiegelung Fenster und Scheiben</DropdownItem>
                 <DropdownItem>Imprägnierung und Reinigung Cabriodach</DropdownItem>
                 <DropdownItem>Felgenreinigung</DropdownItem>

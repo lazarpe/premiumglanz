@@ -10,12 +10,13 @@ import style from "./Page.module.css";
 import AboutUsComponent from "@/components/about_us_component/about_us";
 import FormComponent from "@/components/form_component/form";
 import Footer from "@/components/footer_component/footer";
+import heroImage from "@/assets/img/lambo-politur.jpg";
 
 export default function Home() {
     return (
         <NextUIProvider>
             <NavbarComponent/>
-            <HeroSection/>
+            <HeroSection image={heroImage} headerOne={"PREMIUM"} headerTwo={"GLANZ"} description={"Präzise Pflege und leidenschaftliche Expertise – für den Glanz, den Ihr Auto verdient."}/>
             <div className={style.content}>
                 <ServicesAndPricesComponent/>
                 <AboutUsComponent/>

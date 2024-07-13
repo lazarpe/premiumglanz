@@ -1,5 +1,5 @@
 import React from "react";
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Accordion, AccordionItem, Link} from "@nextui-org/react";
 import CardComponent from "@/components/card_component/card";
 import politur from "../../assets/img/politur.png";
 import nano from "../../assets/img/nanoversiegelung_und_fensterscheiben.jpg";
@@ -12,10 +12,18 @@ export default function ExpansionPanelComponent() {
     return (
         <Accordion variant="splitted" style={{marginBottom: 30}}>
             <AccordionItem key="1" aria-label="Exterieur" title="Exterieur">
-                <CardComponent imagePath={politur} title={"Politur und Lackversiegelung"} price={"199"}/>
-                <CardComponent imagePath={nano} title={"Nanoversiegelung Fenster und Scheiben"} price={"119"}/>
-                <CardComponent imagePath={cabrio} title={"Imprägnierung und Reinigung Cabrio-dach"} price={"129"}/>
-                <CardComponent imagePath={felgen} title={"Felgenreinigung"} price={"39"}/>
+                <Link href={"/politur"}>
+                    <CardComponent imagePath={politur} title={"Politur und Lackversiegelung"} price={"199"}/>
+                </Link>
+                <Link href={"/nano"}>
+                    <CardComponent imagePath={nano} title={"Nanoversiegelung Fenster und Scheiben"} price={"119"}/>
+                </Link>
+                <Link>
+                    <CardComponent imagePath={cabrio} title={"Imprägnierung und Reinigung Cabrio-dach"} price={"129"}/>
+                </Link>
+                <Link>
+                    <CardComponent imagePath={felgen} title={"Felgenreinigung"} price={"39"}/>
+                </Link>
             </AccordionItem>
             <AccordionItem key="2" aria-label="Interieur" title="Interieur">
                 <CardComponent imagePath={innenraumExpress} title={"Innenreinigung Express"} price={"59"}/>
