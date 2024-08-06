@@ -17,7 +17,16 @@ export default function Impraegnierung() {
       <div className={style.content}>
         <h2>Beschreibung</h2>
         <p className={style.p}>
-          Bla
+          Unser Service "Imprägnierung und Reinigung Cabrio-Dach" bietet eine
+          umfassende Pflege und Schutz für Ihr Cabrio. Wir reinigen gründlich
+          das Dachmaterial, entfernen Schmutz, Algen und Flecken, die sich im
+          Laufe der Zeit angesammelt haben. Anschliessend wird eine hochwertige
+          Imprägnierung aufgetragen, die das Dach effektiv vor
+          Witterungseinflüssen und UV-Strahlen schützt. Diese Behandlung
+          verlängert die Lebensdauer des Dachs, bewahrt seine Farbe und sorgt
+          dafür, dass es auch bei Regen wasserabweisend bleibt. Vertrauen Sie
+          auf unsere Expertise, um Ihr Cabrio in bestem Zustand zu halten und
+          den Fahrspass zu maximieren.
         </p>
         <Footer />
       </div>

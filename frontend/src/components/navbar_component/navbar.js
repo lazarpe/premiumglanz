@@ -53,7 +53,7 @@ export default function NavbarComponent() {
           </NavbarBrand>
         </Link>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground">
             <DropdownComponent />
           </Link>
         </NavbarItem>

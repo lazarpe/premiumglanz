@@ -8,6 +8,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { color } from "framer-motion";
 
 export default function DropdownComponent() {
   return (
@@ -33,9 +34,21 @@ export default function DropdownComponent() {
             Imprägnierung und Reinigung Cabriodach
           </Link>
         </DropdownItem>
-        <DropdownItem>Felgenreinigung</DropdownItem>
-        <DropdownItem>Innenreinigung Express</DropdownItem>
-        <DropdownItem>Innenreinigung Premium</DropdownItem>
+        <DropdownItem>
+          <Link href={"/felgenreinigung"} color={"foreground"}>
+            Felgenreinigung
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link href={"/innenreinigung-express"} color={"foreground"}>
+            Innenreinigung Express
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link href={"/innenreinigung-premium"} color={"foreground"}>
+            Innenreinigung Premium
+          </Link>
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
