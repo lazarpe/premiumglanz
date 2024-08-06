@@ -3,7 +3,7 @@ import style from "./AboutUs.module.css";
 
 export default function AboutUsComponent() {
     return (
-        <div>
+        <div id="about-us">
             <h2>Über uns</h2>
             <p className={style.p}>
                 Bei Premiumglanz widmen wir uns mit Fachkenntnissen und langjähriger Erfahrung der
